@@ -10,7 +10,12 @@
 		62C9968C69BE9FF6D7F0AC20 /* libPods-MYCARTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E9858248E857643EB3B98B /* libPods-MYCARTests.a */; };
 		97827550E045CE9FA77A66E6 /* libPods-MYCARUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7190D33FF0570187A3659BCB /* libPods-MYCARUITests.a */; };
 		9C0D128C1F6A1935002F14C5 /* SYJPlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0D128B1F6A1935002F14C5 /* SYJPlist.m */; };
-		9C0D128F1F6A5180002F14C5 /* SYJMyseries.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0D128E1F6A5180002F14C5 /* SYJMyseries.m */; };
+		9C0D129E1F6ABE81002F14C5 /* SYJTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0D12981F6ABE81002F14C5 /* SYJTabBarController.m */; };
+		9C0D129F1F6ABE81002F14C5 /* SYJNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0D12991F6ABE81002F14C5 /* SYJNavigationController.m */; };
+		9C0D12A01F6ABE81002F14C5 /* SYJRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0D129A1F6ABE81002F14C5 /* SYJRootViewController.m */; };
+		9C0D12A31F6ABF32002F14C5 /* SYJFindCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0D12A21F6ABF32002F14C5 /* SYJFindCarViewController.m */; };
+		9C0D12A61F6ABF52002F14C5 /* SYJMyCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0D12A41F6ABF52002F14C5 /* SYJMyCarViewController.m */; };
+		9C0D12A91F6ABF66002F14C5 /* SYJMyseries.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0D12A81F6ABF66002F14C5 /* SYJMyseries.m */; };
 		9C9F96811F681A0900BD0A26 /* SYJSubFindCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9F96801F681A0900BD0A26 /* SYJSubFindCarViewController.m */; };
 		9CA4C8291F6624840080F006 /* SYJFindCarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA4C8271F6624840080F006 /* SYJFindCarCell.m */; };
 		9CA4C82A1F6624840080F006 /* SYJFindCarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CA4C8281F6624840080F006 /* SYJFindCarCell.xib */; };
@@ -25,11 +30,6 @@
 		9CB753851F61716900EDE691 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CB753831F61716900EDE691 /* LaunchScreen.storyboard */; };
 		9CB753901F61716900EDE691 /* MYCARTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB7538F1F61716900EDE691 /* MYCARTests.m */; };
 		9CB7539B1F61716900EDE691 /* MYCARUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB7539A1F61716900EDE691 /* MYCARUITests.m */; };
-		9CB753AA1F6172AA00EDE691 /* SYJRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB753A91F6172AA00EDE691 /* SYJRootViewController.m */; };
-		9CB753AD1F6172B600EDE691 /* SYJFindCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB753AC1F6172B600EDE691 /* SYJFindCarViewController.m */; };
-		9CB753B01F6172BE00EDE691 /* SYJMyCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB753AF1F6172BE00EDE691 /* SYJMyCarViewController.m */; };
-		9CB753B31F6172C600EDE691 /* SYJNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB753B21F6172C600EDE691 /* SYJNavigationController.m */; };
-		9CB753B61F6172CC00EDE691 /* SYJTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB753B51F6172CC00EDE691 /* SYJTabBarController.m */; };
 		9CC391CD1F655C2B00BD0FD2 /* SYJHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC391CC1F655C2B00BD0FD2 /* SYJHttpTool.m */; };
 		9CC391D01F6563D000BD0FD2 /* SYJBrandCar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC391CF1F6563D000BD0FD2 /* SYJBrandCar.m */; };
 		9CC391D81F656CC200BD0FD2 /* SYJBrand.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC391D71F656CC200BD0FD2 /* SYJBrand.m */; };
@@ -61,8 +61,18 @@
 		7190D33FF0570187A3659BCB /* libPods-MYCARUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MYCARUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C0D128A1F6A1935002F14C5 /* SYJPlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYJPlist.h; sourceTree = "<group>"; };
 		9C0D128B1F6A1935002F14C5 /* SYJPlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYJPlist.m; sourceTree = "<group>"; };
-		9C0D128D1F6A5180002F14C5 /* SYJMyseries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SYJMyseries.h; path = ../SYJMyseries.h; sourceTree = "<group>"; };
-		9C0D128E1F6A5180002F14C5 /* SYJMyseries.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SYJMyseries.m; path = ../SYJMyseries.m; sourceTree = "<group>"; };
+		9C0D12981F6ABE81002F14C5 /* SYJTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYJTabBarController.m; sourceTree = "<group>"; };
+		9C0D12991F6ABE81002F14C5 /* SYJNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYJNavigationController.m; sourceTree = "<group>"; };
+		9C0D129A1F6ABE81002F14C5 /* SYJRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYJRootViewController.m; sourceTree = "<group>"; };
+		9C0D129B1F6ABE81002F14C5 /* SYJNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYJNavigationController.h; sourceTree = "<group>"; };
+		9C0D129C1F6ABE81002F14C5 /* SYJTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYJTabBarController.h; sourceTree = "<group>"; };
+		9C0D129D1F6ABE81002F14C5 /* SYJRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYJRootViewController.h; sourceTree = "<group>"; };
+		9C0D12A11F6ABF2C002F14C5 /* SYJFindCarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYJFindCarViewController.h; sourceTree = "<group>"; };
+		9C0D12A21F6ABF32002F14C5 /* SYJFindCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYJFindCarViewController.m; sourceTree = "<group>"; };
+		9C0D12A41F6ABF52002F14C5 /* SYJMyCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYJMyCarViewController.m; sourceTree = "<group>"; };
+		9C0D12A51F6ABF52002F14C5 /* SYJMyCarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYJMyCarViewController.h; sourceTree = "<group>"; };
+		9C0D12A71F6ABF66002F14C5 /* SYJMyseries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYJMyseries.h; sourceTree = "<group>"; };
+		9C0D12A81F6ABF66002F14C5 /* SYJMyseries.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYJMyseries.m; sourceTree = "<group>"; };
 		9C9F967F1F681A0900BD0A26 /* SYJSubFindCarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYJSubFindCarViewController.h; sourceTree = "<group>"; };
 		9C9F96801F681A0900BD0A26 /* SYJSubFindCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYJSubFindCarViewController.m; sourceTree = "<group>"; };
 		9CA4C8261F6624840080F006 /* SYJFindCarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYJFindCarCell.h; sourceTree = "<group>"; };
@@ -89,16 +99,6 @@
 		9CB753961F61716900EDE691 /* MYCARUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MYCARUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CB7539A1F61716900EDE691 /* MYCARUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYCARUITests.m; sourceTree = "<group>"; };
 		9CB7539C1F61716900EDE691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9CB753A81F6172AA00EDE691 /* SYJRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SYJRootViewController.h; path = ../SYJRootViewController.h; sourceTree = "<group>"; };
-		9CB753A91F6172AA00EDE691 /* SYJRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SYJRootViewController.m; path = ../SYJRootViewController.m; sourceTree = "<group>"; };
-		9CB753AB1F6172B600EDE691 /* SYJFindCarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SYJFindCarViewController.h; path = ../../SYJFindCarViewController.h; sourceTree = "<group>"; };
-		9CB753AC1F6172B600EDE691 /* SYJFindCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SYJFindCarViewController.m; path = ../../SYJFindCarViewController.m; sourceTree = "<group>"; };
-		9CB753AE1F6172BE00EDE691 /* SYJMyCarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SYJMyCarViewController.h; path = ../../SYJMyCarViewController.h; sourceTree = "<group>"; };
-		9CB753AF1F6172BE00EDE691 /* SYJMyCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SYJMyCarViewController.m; path = ../../SYJMyCarViewController.m; sourceTree = "<group>"; };
-		9CB753B11F6172C600EDE691 /* SYJNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SYJNavigationController.h; path = ../SYJNavigationController.h; sourceTree = "<group>"; };
-		9CB753B21F6172C600EDE691 /* SYJNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SYJNavigationController.m; path = ../SYJNavigationController.m; sourceTree = "<group>"; };
-		9CB753B41F6172CC00EDE691 /* SYJTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SYJTabBarController.h; path = ../SYJTabBarController.h; sourceTree = "<group>"; };
-		9CB753B51F6172CC00EDE691 /* SYJTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SYJTabBarController.m; path = ../SYJTabBarController.m; sourceTree = "<group>"; };
 		9CC391CB1F655C2B00BD0FD2 /* SYJHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYJHttpTool.h; sourceTree = "<group>"; };
 		9CC391CC1F655C2B00BD0FD2 /* SYJHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYJHttpTool.m; sourceTree = "<group>"; };
 		9CC391CE1F6563D000BD0FD2 /* SYJBrandCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SYJBrandCar.h; path = ../SYJBrandCar.h; sourceTree = "<group>"; };
@@ -166,8 +166,8 @@
 		9C0D12901F6A5489002F14C5 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				9C0D128D1F6A5180002F14C5 /* SYJMyseries.h */,
-				9C0D128E1F6A5180002F14C5 /* SYJMyseries.m */,
+				9C0D12A71F6ABF66002F14C5 /* SYJMyseries.h */,
+				9C0D12A81F6ABF66002F14C5 /* SYJMyseries.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -182,8 +182,8 @@
 		9C0D12921F6A54B0002F14C5 /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				9CB753AE1F6172BE00EDE691 /* SYJMyCarViewController.h */,
-				9CB753AF1F6172BE00EDE691 /* SYJMyCarViewController.m */,
+				9C0D12A51F6ABF52002F14C5 /* SYJMyCarViewController.h */,
+				9C0D12A41F6ABF52002F14C5 /* SYJMyCarViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -297,8 +297,8 @@
 		9CC391DB1F657F0500BD0FD2 /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				9CB753AB1F6172B600EDE691 /* SYJFindCarViewController.h */,
-				9CB753AC1F6172B600EDE691 /* SYJFindCarViewController.m */,
+				9C0D12A11F6ABF2C002F14C5 /* SYJFindCarViewController.h */,
+				9C0D12A21F6ABF32002F14C5 /* SYJFindCarViewController.m */,
 				9C9F967F1F681A0900BD0A26 /* SYJSubFindCarViewController.h */,
 				9C9F96801F681A0900BD0A26 /* SYJSubFindCarViewController.m */,
 			);
@@ -328,12 +328,12 @@
 		9CE771EF1F62E5BA00471EA8 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				9CB753A81F6172AA00EDE691 /* SYJRootViewController.h */,
-				9CB753A91F6172AA00EDE691 /* SYJRootViewController.m */,
-				9CB753B11F6172C600EDE691 /* SYJNavigationController.h */,
-				9CB753B21F6172C600EDE691 /* SYJNavigationController.m */,
-				9CB753B41F6172CC00EDE691 /* SYJTabBarController.h */,
-				9CB753B51F6172CC00EDE691 /* SYJTabBarController.m */,
+				9C0D129D1F6ABE81002F14C5 /* SYJRootViewController.h */,
+				9C0D129A1F6ABE81002F14C5 /* SYJRootViewController.m */,
+				9C0D129B1F6ABE81002F14C5 /* SYJNavigationController.h */,
+				9C0D12991F6ABE81002F14C5 /* SYJNavigationController.m */,
+				9C0D129C1F6ABE81002F14C5 /* SYJTabBarController.h */,
+				9C0D12981F6ABE81002F14C5 /* SYJTabBarController.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -623,21 +623,21 @@
 			files = (
 				9CB7537A1F61716900EDE691 /* AppDelegate.m in Sources */,
 				9CB753771F61716900EDE691 /* main.m in Sources */,
-				9CB753AA1F6172AA00EDE691 /* SYJRootViewController.m in Sources */,
+				9C0D129E1F6ABE81002F14C5 /* SYJTabBarController.m in Sources */,
 				9CC391D01F6563D000BD0FD2 /* SYJBrandCar.m in Sources */,
 				9CA4C8321F665A0F0080F006 /* SYJSubBrand.m in Sources */,
-				9CB753B31F6172C600EDE691 /* SYJNavigationController.m in Sources */,
-				9C0D128F1F6A5180002F14C5 /* SYJMyseries.m in Sources */,
 				9CC391CD1F655C2B00BD0FD2 /* SYJHttpTool.m in Sources */,
 				9C0D128C1F6A1935002F14C5 /* SYJPlist.m in Sources */,
+				9C0D129F1F6ABE81002F14C5 /* SYJNavigationController.m in Sources */,
+				9C0D12A01F6ABE81002F14C5 /* SYJRootViewController.m in Sources */,
 				9CA4C8391F669B040080F006 /* SYJSubFindCarCell.m in Sources */,
-				9CB753B01F6172BE00EDE691 /* SYJMyCarViewController.m in Sources */,
-				9CB753B61F6172CC00EDE691 /* SYJTabBarController.m in Sources */,
 				9CC391D81F656CC200BD0FD2 /* SYJBrand.m in Sources */,
 				9CA4C8351F665A480080F006 /* SYJSeries.m in Sources */,
 				9CA4C8291F6624840080F006 /* SYJFindCarCell.m in Sources */,
+				9C0D12A31F6ABF32002F14C5 /* SYJFindCarViewController.m in Sources */,
+				9C0D12A61F6ABF52002F14C5 /* SYJMyCarViewController.m in Sources */,
 				9C9F96811F681A0900BD0A26 /* SYJSubFindCarViewController.m in Sources */,
-				9CB753AD1F6172B600EDE691 /* SYJFindCarViewController.m in Sources */,
+				9C0D12A91F6ABF66002F14C5 /* SYJMyseries.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
